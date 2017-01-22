@@ -493,9 +493,28 @@ header {
 
 .up-arrow {
   position: fixed;
-  bottom: 12px;
+  bottom: 15px;
   right: 17px;
   z-index: 5; }
+  .up-arrow:hover {
+    -webkit-animation: updown 0.5s cubic-bezier(0.74, 0.1, 0.96, 0.61);
+    animation: updown 0.5s cubic-bezier(0.74, 0.1, 0.96, 0.61); }
+
+@-webkit-keyframes updown {
+  0%, 100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  50% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px); } }
+
+@keyframes updown {
+  0%, 100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  50% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px); } }
   .up-arrow .circle {
     position: relative;
     height: 25px;
